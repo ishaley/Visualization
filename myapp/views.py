@@ -1,9 +1,7 @@
 from django.shortcuts import render
-
-# Create your views here.
-
-# 添加 index 函数，返回 index.html 页面
+from . import models
 
 
 def index(request):
-    return render(request, 'index.html')
+    v1 = models.UserLoanOrder.objects.first()
+    return render(request, 'index.html', {'v1': v1})

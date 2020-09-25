@@ -78,9 +78,13 @@ WSGI_APPLICATION = 'Visualization.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.mysql', # 数据库引擎
+        'NAME': 'data_mining', # 数据库名
+        'USER': 'ydxs', # 账号
+        'PASSWORD': 'root147258148!@#wang', # 密码
+        'HOST': '26p36952m0.qicp.vip', # HOST
+        'POST': 40868, # 端口
+    },
 }
 
 
