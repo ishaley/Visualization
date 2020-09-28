@@ -57,6 +57,7 @@ ROOT_URLCONF = 'Visualization.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        # 'DIRS': [os.path.join(BASE_DIR,'templates')],
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -79,14 +80,24 @@ WSGI_APPLICATION = 'Visualization.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # 数据库引擎
-        'NAME': 'data_mining', # 数据库名
-        'USER': 'ydxs', # 账号
-        'PASSWORD': 'root147258148!@#wang', # 密码
-        'HOST': '26p36952m0.qicp.vip', # HOST
-        'POST': 40868, # 端口
+        'NAME': 'dataviews', # 数据库名
+        'USER': 'root', # 账号
+        'PASSWORD': '123456', # 密码
+        'HOST': 'localhost', # HOST
+        'POST': 3306, # 端口
     },
 }
-
+# DATABASES = {
+#
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql', # 数据库引擎
+#         'NAME': 'data_mining', # 数据库名
+#         'USER': 'data_dev', # 账号
+#         'PASSWORD': 'xjl2020!@#', # 密码
+#         'HOST': '192.168.50.72', # HOST
+#         'POST': 3306, # 端口
+#     },
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
